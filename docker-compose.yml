@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  testmysql:
+    container_name: mysql
+    image: mysql:8.0.33
+    environment:
+      MYSQL_DATABASE: testmysql
+      MYSQL_ROOT_PASSWORD: 1234
+      TZ: Asia/Seoul
+    volumes:
+      - ./db/data:/var/lib/mysql:rw
+    ports:
+      - "3300:3306"
+    restart: always
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
