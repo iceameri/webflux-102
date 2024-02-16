@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+/*
+ * SSE 통신
+ */
 @RestController
 @RequestMapping("/api/shops")
 public class ShopController {

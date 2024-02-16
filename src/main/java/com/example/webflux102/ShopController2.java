@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+/*
+ * 기존 호출 방식
+ */
 @RestController
 @RequestMapping("/api2/shops")
 public class ShopController2 {
